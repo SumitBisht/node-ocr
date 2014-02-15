@@ -1,0 +1,27 @@
+{
+  "name": "node-ocr-reader",
+  "description": "a simplified Optical Character Recongnition in a node.js application stack",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "express": "3.x",
+    "jade": "*",
+    "nodecr": ""
+  },
+  "devDependencies": {
+  },
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "authenticator"
+  },
+  "keywords": [
+    "tesseract",
+    "ocr"
+  ],
+  "author": "sumit bisht",
+  "license": "MIT"
+}
