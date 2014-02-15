@@ -7,4 +7,6 @@ I am using the nodecr for this.
 You need to install it first - if not using this application
   npm install nodecr
 
+For now, it works with the basic image processing as no filtering/rectification/
+machine learning mechanism is in place and display the results.
 
