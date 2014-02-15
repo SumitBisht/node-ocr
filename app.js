@@ -20,6 +20,11 @@ app.get('/', function(req, res){
 	res.render("index");
 });
 
+app.get('/success', function(req, res){
+	// console.log(req.query.text);
+	res.render('success', req.query);
+});
+
 app.post('/process', function(req, res){
 	var filePath = req.files.pic.path;
 	var text = '';
@@ -28,7 +33,6 @@ app.post('/process', function(req, res){
 			console.log('Error occured while parsing image for text: '+error);
 			res.redirect('/');
 		}
-		console.log('Here is the text: '+text);
 		res.redirect('/success?text='+text);
 	});
 });
